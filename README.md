@@ -1,57 +1,102 @@
-C# OOP Practice – Abstract Classes, Interfaces & Polymorphism
-This repository contains three small C# exercises that I completed to strengthen my understanding of object-oriented programming.
+# C# Object-Oriented Programming Practice
 
-Topics Covered
-Classes and objects
-Constructors
-Constructor validation using ArgumentException
-Read-only properties
-Abstract classes
-Interfaces
-Method overriding
-Polymorphism
-Collections (List<T>)
-Basic exception handling
-Exercises
-Exercise 1 – Rectangle
-Implemented a Rectangle class with:
+This repository contains three beginner-to-intermediate C# exercises that I completed to strengthen my understanding of object-oriented programming (OOP).
 
-Read-only properties
-Constructor validation
-An GetArea() method
-Exercise 2 – Employees
-Created an employee hierarchy consisting of:
+The goal of these exercises was to practice writing clean, maintainable code while becoming more comfortable with core C# concepts.
 
-An abstract Employee base class
-FullTimeEmployee
-PartTimeEmployee
-Each employee calculates its salary by overriding the abstract CalculateSalary() method.
+## Exercise 1: Rectangle Class
 
-Exercise 3 – Machines and Interfaces
-Implemented:
+### Concepts Practiced
 
-An abstract Machine class
-An IRechargeable interface
-A Robot class that inherits from Machine and implements IRechargeable
-The program demonstrates polymorphism by storing different objects in collections of their base type.
+- Classes and objects
+- Constructors
+- Read-only properties
+- Input validation with `ArgumentException`
+- Methods
 
-What I Learned
-Working on these exercises helped me better understand:
+### Description
 
-When to use abstract classes versus interfaces
-Constructor chaining with base(...)
-Method overriding with override
-Polymorphism using base class references
-Input validation and exception handling
-What I Still Need to Improve
-I'm still learning and there are several areas I want to become stronger in:
+I implemented a `Rectangle` class that validates its constructor arguments and provides a `GetArea()` method to calculate the rectangle's area.
 
-Writing cleaner and more idiomatic C# code
-Reducing syntax mistakes and compiler errors
-Better understanding access modifiers (public, protected, private)
-Knowing when to choose an interface versus an abstract class
-Designing larger object-oriented applications
-Following C# naming conventions consistently
-Goal
-My goal is to become a professional C#/.NET developer by practicing consistently and improving with every project. This repository documents my progress and serves as a record of my learning journey.
+---
+
+## Exercise 2: Employee Hierarchy
+
+### Concepts Practiced
+
+- Abstract classes
+- Inheritance
+- Method overriding
+- Constructor chaining with `base(...)`
+- Polymorphism
+
+### Description
+
+I created an abstract `Employee` base class together with two derived classes:
+
+- `FullTimeEmployee`
+- `PartTimeEmployee`
+
+Each class overrides the abstract `CalculateSalary()` method according to its own salary calculation.
+
+The employees are stored in a `List<Employee>` to demonstrate polymorphism.
+
+---
+
+## Exercise 3: Machines and Interfaces
+
+### Concepts Practiced
+
+- Interfaces
+- Abstract classes
+- Interface implementation
+- Method overriding
+- Polymorphism
+
+### Description
+
+I implemented an abstract `Machine` class together with an `IRechargeable` interface.
+
+The `Robot` class inherits from `Machine` and implements `IRechargeable`. This exercise demonstrates how inheritance and interfaces can be used together.
+
+---
+
+## What I Learned
+
+Through these exercises, I practised:
+
+- Object-oriented programming principles
+- Constructors and constructor validation
+- Exception handling
+- Abstract classes
+- Interfaces
+- Method overriding
+- Polymorphism
+- Working with collections such as `List<T>`
+
+---
+
+## Areas I Still Need to Improve
+
+Although these exercises helped me improve my understanding of C#, I still need to work on several areas:
+
+- Writing cleaner and more idiomatic C# code
+- Reducing syntax and compiler errors
+- Understanding access modifiers such as `public`, `private`, and `protected`
+- Remembering correct constructor and method syntax
+- Knowing when to use an interface instead of an abstract class
+- Following C# and .NET naming conventions consistently
+- Designing larger object-oriented applications
+
+I am still learning, and some parts of the original solution required corrections. However, the exercises helped me identify the areas that I need to practise more carefully.
+
+---
+
+## About This Repository
+
+I am currently learning C# with the goal of becoming a professional .NET developer.
+
+This repository documents my progress and serves as a collection of practice exercises as I continue improving my programming skills.
+
+Constructive feedback and suggestions are always welcome.
 
